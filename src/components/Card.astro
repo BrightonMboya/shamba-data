@@ -1,0 +1,28 @@
+---
+export interface Props {
+  image: string;
+  caption: string;
+  buttonColor: string;
+}
+
+const { image, caption, buttonColor } = Astro.props;
+---
+
+<div class="flex sm:flex-col items-center gap-5">
+  <div
+    class={`border-${buttonColor} w-[130px] h-[130px] md:w-[160px] md:h-[160px] border-[2px] rounded-full flex items-center justify-center `}
+  >
+    <div class="md:w-[150px] md:h-[150px] rounded-full w-[120px] h-[120px]">
+      <img
+        src={image}
+        alt="Hero"
+        class="rounded-full md:w-[150px] md:h-[150px] w-[120px] h-[120px]"
+      />
+    </div>
+  </div>
+  <div
+    class={`bg-${buttonColor} text-lg px-4 py-2 rounded-md text-white font-bold tracking-widest`}
+  >
+    {caption}
+  </div>
+</div>
