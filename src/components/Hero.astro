@@ -1,46 +1,50 @@
-<main class="max-w-[1000px] relative overflow-x-hidden">
+<main class="relative overflow-x-hidden">
   <section
     class="flex flex-col items-center sm:flex-row sm:items-start sm:mt-5 md:justify-between lg:space-x-[4rem]"
   >
     <div
-      class="flex items-center justify-center flex-col sm:max-w-[350px] md:max-w-[400px] lg:max-w-[500px]"
+      class="flex items-center md:items-start justify-center flex-col sm:max-w-[350px] md:max-w-[400px] lg:max-w-[900px]"
     >
-      <div class="mt-7">
-        <h3 class="text-green text-5xl font-black text-center">
+      <div class="mt-[3.25rem]">
+        <h3 class="text-green text-5xl font-bold text-center md:text-left">
           Get accurate
         </h3>
         <div class="flex items-center justify-center">
-          <p class="mt-2 w-[300px] text-center text-2xl">
+          <p class="mt-4 w-[300px]text-center text-2xl font-bold">
             daily market prices for your crops in your Whatsapp.
           </p>
         </div>
-        <p class="mt-8 text-center font-light text-xl">
-          Sign up your <span class="text-g">Whatsapp Number</span> to get the daily price notifications from 4
-          Zambian markets
+        <p
+          class="mt-5 md:mt-3 text-center md:text-left font-light text-xl max-w-[350px] md:max-w-[500px]"
+        >
+          Sign up your <span class="text-green">Whatsapp Number</span> to get the
+          daily price notifications from 4 Zambian markets
         </p>
       </div>
 
-      <div class="mt-5 sm:space-x-[20px]">
+      <div class="mt-5 sm:space-x-[20px] flex flex-col md:flex-row gap-y-3">
         <a href="#signUp">
           <button
-            class="px-4 py-1 bg-green rounded-md cursor-pointer text-white font-bold text-lg md:w-[120px]"
+            class="bg-green rounded-md cursor-pointer text-white font-bold text-lg w-[160px] h-[45px]"
             >Sign Up</button
           >
         </a>
 
         <a href="#about">
           <button
-            class="px-3 py-1 rounded-md cursor-pointer border-[1px] border-green font-bold text-lg md:w-[160px]"
+            class="rounded-md cursor-pointer border-[1px] border-green font-bold text-lg w-[160px] h-[45px]"
             >What we build
           </button>
         </a>
       </div>
     </div>
-    <div class="sm:w-[300px] sm:h-[400px] w-[250px] h-[300px] mt-[2rem] z-10">
+    <div
+      class="sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[500px] w-[311px] h-[359px] mt-[2rem] z-10"
+    >
       <img
         src="/Lady.png"
         alt="Lady"
-        class="sm:w-[300px] sm:h-[400px] w-[250px] h-[300px]"
+        class="sm:w-[300px] sm:h-[400px] w-[311px] h-[359px] lg:h-[500px] lg:w-[400px]"
       />
     </div>
     <div class="sm:hidden mb-[11rem] sm:mb-0">
@@ -62,40 +66,48 @@
   </section>
 
   <section
-    class="sm:flex sm:items-start sm:mt-[4rem] sm:pl-5 md:gap-[5rem] lg:gap-[10rem]"
+    class="sm:flex sm:items-start sm:mt-[4rem] md:gap-[5rem] lg:gap-[10rem]"
   >
-    <div class="w-[300px] h-[340px] hidden sm:block">
-      <img src="/about.png" alt="Lady" class="w-[300px] h-[300px]" />
+    <div class="w-[300px] h-[340px] hidden sm:block lg:w-[400px] lg:h-[440px]">
+      <img
+        src="/about.png"
+        alt="Lady"
+        class="w-[300px] h-[300px] lg:w-[400px] lg:h-[440px]"
+      />
     </div>
     <div
-      class="flex flex-col items-center justify-center mt-9 sm:mt-0 sm:max-w-[300px] md:max-w-[350px]"
+      class="flex flex-col items-center md:items-start justify-center mt-9 sm:mt-0 sm:max-w-[300px] md:max-w-[350px] lg:max-w-[900px]"
     >
       <div
-        class="flex flex-col items-center text-green font-black gap-0"
+        class="flex flex-col items-center md:items-start text-green font-black gap-0"
         id="about"
       >
-        <h3 class="text-[25px]">About</h3>
-        <span class="text-[36px]">Shamba Data</span>
+        <h3 class="text-[1.8rem] font-bold">About</h3>
+        <span class="text-[2.2rem]">Shamba Data</span>
       </div>
-      <article class="text-center text-xl sm:text-lg font-light mx-1">
-        We understand that you struggle to get the market
-        information you want.
+      <article
+        class="text-center md:text-left text-xl font-light mx-1 mt-3 lg:max-w-[463px] lg:tracking-wider"
+      >
+        We understand that you struggle to get the market information you want.
       </article>
       <article
-        class="text-center text-xl sm:text-lg font-light mt-2 sm:mt-0 mx-2"
+        class="text-center md:text-left text-xl lg:tracking-wider font-light mt-[1rem] lg:max-w-[463px]"
       >
-        Therefore, <span class="text-green">farmer</span>  come join <span class="text-gold">Shamba data.</span> 
-        We provide you with accurate and up-to-date market information that helps you maximize profits from farming.
+        Therefore, farmer come join <span class="text-gold font-bold"
+          >Shamba data.</span
+        >
+        We provide you with accurate and up-to-date market information that helps
+        you maximize profits from farming.
       </article>
     </div>
 
     <div class="sm:hidden mb-[21rem] relative mt-6">
       <div
-        class="h-[200px] w-[200px] border-2 border-gold rounded-full absolute -left-[20%]"
+        class="h-[200px] w-[200px] border-[0.5px] border-gold rounded-full absolute -left-[20%]"
       >
       </div>
       <div
-        class="h-[100px] w-[100px] border-2 border-green rounded-full absolute translate-y-[120%] translate-x-[20%]"
+        class="h-[100px] w-[100px] border-[0.5px] border-green rounded-full absolute translate-y-[120%] translate-x-[20%]"
       >
       </div>
 
