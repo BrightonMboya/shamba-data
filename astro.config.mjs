@@ -6,9 +6,9 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  vite: {
-    ssr: {
-      external: ["svgo"],
-    },
-  },
+  // vite: {
+  //   ssr: {
+  //     external: ["svgo"],
+  //   },
+  // },
 });
