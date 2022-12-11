@@ -1,111 +1,119 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Hero from "../components/Hero.astro";
+import Value from "../components/Value.astro";
 ---
 
 <Layout title="Welcome to Shamba Data.">
-  <main class="font-sans">
-    <Hero />
-
-    <section
-      class="mt-[2rem] pl-5 md:ml-[2rem] sm:mt-[5rem] sm:flex sm:justify-between sm:items-start"
-    >
-      <div class="flex gap-2">
-        <div>
-          <div class="bg-gold w-[23px] h-[70px]"></div>
-          <div class="w-[23px] h-[40px] bg-green"></div>
+  <main class="font-sans flex items-center justify-center flex-col container">
+    <section class="pt-[100px] text-center">
+      <div class="flex justify-between mx-[1rem]">
+        <div class="w-[100px] h-[100px]">
+          <img src="/tomat1.webp" alt="tomatoes" class="w-[100px] h-[100px]" />
         </div>
-
-        <div class="flex-col flex">
-          <h3 class="w-[250px] text-green font-light text-xl">
-            Get the most accurate Data with
-          </h3>
-          <strong class="text-gold text-xl">Shamba Data</strong>
-          <strong class="text-2xl text-green font-bold"
-            >We are here for you!</strong
-          >
+        <div class="w-[100px] h-[100px] mt-[1.5rem]">
+          <img
+            src="/Tomatoes.webp"
+            alt="tomatoes"
+            class="w-[100px] h-[100px]"
+          />
         </div>
       </div>
 
-      <div class="">
-        <div class="w-[350px] h-[350px] sm:mt-0">
-          <img src="/phoneLady.webp" alt="Lady" class="w-[350px] h-[350px]" />
+      <div class="flex justify-center items-end">
+        <div class="w-[90px] h-[90px] hidden md:block">
+          <img src="/chilli.webp" alt="tomatoes" class="w-[90px] h-[90px]" />
         </div>
-      </div>
-    </section>
 
-    <section class="flex items-center justify-center flex-col mt-[5rem]">
-      <div class="text-green text-center">
-        <h1 class="text-xl font-regular">We cover these</h1>
-        <h3 class="font-bold text-2xl tracking-wide">
-          4 Zambian <span class="text-gold">markets.</span>
+        <h3
+          class="font-bold text-[2.5rem] md:text-[3rem] text-center max-w-lg md:-translate-y-[2rem]"
+        >
+          Intellig<span class="text-green">en</span>ce in <span
+            class="text-green">Food</span
+          > Systems
         </h3>
+        <div class="w-[90px] h-[90px] hidden md:block">
+          <img src="/tomat1.webp" alt="tomatoes" class="w-[90px] h-[90px]" />
+        </div>
       </div>
 
-      <div
-        class="flex flex-col gap-3 mt-7 sm:grid sm:grid-cols-4 md:grid-cols-4"
-      >
-        <Card caption="Chisokoni" image="/chisokoni.webp" buttonColor="gold" />
-        <Card
-          caption="Kalusambesa"
-          image="/kalusambesa.webp"
-          buttonColor="green"
-        />
-        <Card caption="Soweto" image="/soweto.webp" buttonColor="gold" />
-        <Card caption="Ndola" image="/ndola.webp" buttonColor="green" />
+      <div class="flex flex-col items-center justify-center">
+        <article
+          class="mt-[25px] font-regular text-lg md:text-xl max-w-lg md:-translate-y-[3rem]"
+        >
+          We collect, aggregate, and process data that feeds the African
+          Continent
+        </article>
+        <button
+          class="mt-[14px] bg-green text-white font-bold px-4 py-2 md:py-4 rounded-md cursor-pointer md:-translate-y-[3rem]"
+          >Book An Enterprise Demo</button
+        >
       </div>
     </section>
 
-    <div
-      class="flex flex-col items-center justify-center mt-[3rem] sm:mt-[5rem]"
-      id="signUp"
-    >
-      <h3 class="text-2xl text-green">
-        Sign Up for <span class="text-gold"> Shamba Data</span>
-      </h3>
-      <p class="text-center mt-4 mx-3 text-lg font-light">
-        Our Service is priced at <span class="text-green font-bold"
-          >K70/ month</span
-        >. We will notify you once we launch
-      </p>
-    </div>
-
     <section
-      class="justify-center flex relative mt-[2rem] md:max-w-[700px] mb-[3rem]"
+      class="mt-[73px] md:mt-[40px] text-center justify-center items-center flex flex-col"
     >
-      <div class="md:flex">
-        <div class="w-[300px] h-[400px] hidden md:block">
-          <img src="/bottom.webp" alt="Lady" class="w-[350px] h-[450px]" />
+      <div class="md:flex md:text-left">
+        <div class="md:w-[400px]">
+          <h3 class="font-black text-green text-2xl">
+            We are here to solve the world&apos;s fundamental challenge,
+          </h3>
+          <p class="mt-[10px] text-lg">
+            With the global population increasing, we need to find new solutions
+            that are scalable, and sustainable to the planet.
+          </p>
+          <p class="mt-[10px] text-lg">
+            To work on this, we start with providing agriculture data of the
+            African continent so that we can increase food production, monitor
+            food security and mitigate the effect of climate change in the
+            continent.
+          </p>
         </div>
-        <form class="flex flex-col justify-center md:mt-[2rem] md:ml-[7rem]">
-          <div class="flex flex-col">
-            <label>Full Name</label>
-            <input
-              type="text"
-              required
-              id="userName"
-              class="outline-none focus:outline-none border-[1px] border-slate-300 rounded-md py-2 text-gray-900 w-[250px] px-2 bg-transparent"
-            />
-          </div>
 
-          <div class="mt-5 flex flex-col">
-            <label>Whatsapp Number</label>
-            <input
-              type="text"
-              required
-              id="whatsappNumber"
-              class="outline-none focus:outline-none border-[1px] border-slate-300 rounded-md py-2 text-gray-900 w-[250px] px-2 bg-transparent"
-            />
-          </div>
-
-          <button
-            type="submit"
-            class="px-4 py-2 rounded-md bg-green cursor-pointer text-lg text-white font-medium mt-7 items-start w-[250px]"
-            >Sign Up</button
-          >
-        </form>
+        <div
+          class="h-[336px] w-[294px] md:w-[400px] md:h-[400px] mx-auto mt-[50px] md:mt-0"
+        >
+          <img
+            src="/hero.svg"
+            alt="hero"
+            class="h-[336px] w-[294px] md:w-[400px] md:h-[400px]"
+          />
+        </div>
       </div>
+
+      <div class="md:flex md:text-left md:space-x-[1rem] md:mt-[170px]">
+        <div>
+          <h3 class="font-black text-gold text-2xl mt-[50px]">
+            Providing Market Information to Farmers in Zambia
+          </h3>
+          <p class="mt-[20px] text-lg">
+            We aim to provide accurate and reliable data to our clients. We
+            provide over 100 Zambian farmers
+          </p>
+          <p class="mt-[15px] text-lg">
+            with market information so that they can know which market has the
+            best prices and return have more financial returns
+          </p>
+          <button
+            class="mt-[27px] bg-gold text-white font-bold px-4 py-2 rounded-md cursor-pointer"
+            >Learn More</button
+          >
+        </div>
+        <div class="flex items-center justify-center">
+          <div
+            class="sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[500px] w-[311px] h-[359px] mt-[2rem] z-10"
+          >
+            <img
+              src="/Lady.webp"
+              alt="Lady"
+              class="sm:w-[300px] sm:h-[400px] w-[311px] h-[359px] lg:h-[500px] lg:w-[400px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-[91px]">
+      <Value />
     </section>
   </main>
 </Layout>

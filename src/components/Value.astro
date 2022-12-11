@@ -1,0 +1,49 @@
+---
+import ImageCard from "./ImageCard.astro";
+---
+
+<div class="flex items-center justify-center flex-col">
+  <div class="h-[214px] w-[350px] rounded-t-md">
+    <div class="h-[144px] bg-green rounded-t-md text-white text-center">
+      <h3 class="pt-[20px] font-bold text-lg">
+        Transforming Economic Value Chain
+      </h3>
+      <article class="pt-[20px]">
+        With our accurate & up to date data, companies and businesses can
+        supplement their current supply chains, plan accordingly and make
+        data-informed decisions.
+      </article>
+    </div>
+    <div class="h-[70px] w-[350px]">
+      <img src="/tomat.webp" alt="" class="h-[70px] w-[350px]" />
+    </div>
+  </div>
+
+  <div class="mt-[45px]">
+    <h3 class="text-center text-green font-bold md:text-xl">
+      We are Working with Customers to
+    </h3>
+    <div
+      class="flex flex-col md:flex-row md:items-start md:gap-5 md:mt-[2rem] justify-center items-center"
+    >
+      <ImageCard
+        color="green"
+        caption="Plan Accordingly"
+        imageUrl="/plan.webp"
+        description="Optimize the supply chains by comparing on different suppliers of their specific needs."
+      />
+      <ImageCard
+        color="gold"
+        caption="Forecast Accordingly"
+        imageUrl="/forecast.webp"
+        description="use our data to forecast the risk in supply chains and crop production"
+      />
+      <ImageCard
+        color="green"
+        caption="Monitor Accordingly"
+        imageUrl="/monitor.webp"
+        description="If you're working on the public sector, you can monitor food security on your region and understand how climate change is affecting food Production"
+      />
+    </div>
+  </div>
+</div>

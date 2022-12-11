@@ -1,0 +1,77 @@
+---
+import { Icon } from "astro-icon";
+const date = new Date().getFullYear().toString();
+---
+
+<style>
+  [astro-icon] {
+    color: #fff;
+
+    width: 30px;
+    height: 30px;
+  }
+</style>
+<footer class="bg-green w-full mt-[150px]">
+  <div class="flex items-center justify-center pt-[30px] gap-3 md:hidden">
+    <Icon name="fa-brands:twitter" />
+    <Icon name="fa-brands:facebook-f" />
+    <Icon name="brandico:linkedin" />
+  </div>
+  <div
+    class="md:flex md:flex-row-reverse md:items-start md:justify-center md:gap-[2rem]"
+  >
+    <div class="mt-[30px] items-center justify-center flex flex-col">
+      <h3 class="text-xl text-white font-bold tracking-wide">Shamba Data</h3>
+      <p class="text-white text-center mt-[15px] text-lg">
+        Subsribe to our News Letter
+      </p>
+      <form>
+        <div class="relative mt-[10px]">
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            class="w-[194px] h-[44px] px-2 bg-gold rounded-md text-white focus:outline-none placeholder:text-white"
+          />
+          <button
+            class="w-[100px] h-[30px] bg-white rounded-md absolute -right-[35%] top-[10px]"
+            >Submit</button
+          >
+        </div>
+      </form>
+    </div>
+    <div
+      class="justify-start flex flex-col md:flex-row items-start pl-[30px] md:pl-0 mt-[37px] md:gap-[3rem]"
+    >
+      <div>
+        <h3 class="font-bold text-white text-lg">Company</h3>
+        <ul class="text-[#B5C9B2] space-y-2">
+          <li>About Us</li>
+          <li>Why Choose Us</li>
+          <li>Pricing</li>
+          <li>Testimonial</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-white text-lg mt-5 md:mt-0">Resources</h3>
+
+        <ul class="text-[#B5C9B2] space-y-2">
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="mt-[72px] mb-[40px] md:flex md:items-center md:justify-center md:gap-[2rem]"
+  >
+    <h3 class="text-lg text-white text-center">Copyright @ {date}</h3>
+    <div class="md:flex items-center justify-center gap-3 hidden">
+      <Icon name="fa-brands:twitter" />
+      <Icon name="fa-brands:facebook-f" />
+      <Icon name="brandico:linkedin" />
+    </div>
+  </div>
+</footer>
