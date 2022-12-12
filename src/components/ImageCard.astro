@@ -2,13 +2,15 @@
 const { imageUrl, caption, color, description } = Astro.props;
 ---
 
-<div class="mt-[35px] md:mt-0 flex flex-col items-center justify-center">
-  <div class={`w-[244px] rounded-md bg-${color} `}>
-    <div class="w-[244px] h-[180px]">
+<div
+  class="mt-[35px] w-[244px] lg:w-[300px] md:mt-0 flex flex-col items-center justify-center"
+>
+  <div class={`w-[244px] lg:w-[300px] rounded-md bg-${color} `}>
+    <div class="w-[244px] lg:w-[300px] h-[180px] lg:h-[200px]">
       <img
         src={imageUrl}
         alt=""
-        class="w-[244px] h-[180px] object-cover rounded-t-md block"
+        class="w-[244px] lg:w-[300px] h-[180px] lg:h-[200px] object-cover rounded-t-md block"
       />
     </div>
 

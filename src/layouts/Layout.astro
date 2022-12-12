@@ -5,6 +5,8 @@ export interface Props {
 
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
+import BasicScripts from "../components/BasicScripts.astro";
 ---
 
 <!DOCTYPE html>
@@ -67,8 +69,10 @@ import Footer from "../components/Footer.astro";
     <title>{title}</title>
   </head>
   <body class="flex flex-col items-center justify-center max-w-[200ch]">
+    <!-- <NavBar /> -->
     <slot />
     <Footer />
+    <BasicScripts />
   </body>
 </html>
 <style>

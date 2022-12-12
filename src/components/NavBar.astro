@@ -1,0 +1,53 @@
+---
+import Hamburger from "./Hamburger.astro";
+---
+
+<header
+  class="top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 md:backdrop-blur-sm"
+  id="header"
+>
+  <div
+    class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4"
+  >
+    <div class="flex justify-between">
+      <div class="flex items-center md:hidden">
+        <Hamburger />
+      </div>
+    </div>
+    <nav
+      class="items-center w-full hidden md:flex text-gray-600 border-2 border-red-500"
+      aria-label="Main navigation"
+    >
+      <ul
+        class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base"
+      >
+        <li class="dropdown">
+          <ul
+            class="dropdown-menu rounded md:absolute pl-4 md:pl-0 font-medium md:bg-green drop-shadow-xl"
+          >
+            <li class="">
+              <a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="">
+              <a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#"
+                >What we do</a
+              >
+            </li>
+            <li class="">
+              <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                >Market Information</a
+              >
+            </li>
+            <li class="">
+              <a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

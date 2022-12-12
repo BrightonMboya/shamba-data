@@ -4,7 +4,9 @@ import Value from "../components/Value.astro";
 ---
 
 <Layout title="Welcome to Shamba Data.">
-  <main class="font-sans flex items-center justify-center flex-col container">
+  <main
+    class="font-sans flex items-center justify-center flex-col container lg:max-w-[950px] 2xl:max-w-6xl"
+  >
     <section class="pt-[100px] text-center">
       <div class="flex justify-between mx-[1rem]">
         <div class="w-[100px] h-[100px]">
@@ -20,19 +22,34 @@ import Value from "../components/Value.astro";
       </div>
 
       <div class="flex justify-center items-end">
-        <div class="w-[90px] h-[90px] hidden md:block">
-          <img src="/chilli.webp" alt="tomatoes" class="w-[90px] h-[90px]" />
+        <div
+          class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px] hidden md:block"
+        >
+          <img
+            src="/chilli.webp"
+            alt="tomatoes"
+            class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px]"
+          />
         </div>
 
-        <h3
-          class="font-bold text-[2.5rem] md:text-[3rem] text-center max-w-lg md:-translate-y-[2rem]"
+        <div class="lg:flex lg:justify-center lg:items-center">
+          <h3
+            class="font-bold text-[2.5rem] md:text-[3rem] lg:text-[4rem] text-center max-w-lg lg:max-w-none md:-translate-y-[2rem]"
+          >
+            Intellig<span class="text-green">en</span>ce in <span
+              class="text-green">Food</span
+            > Systems
+          </h3>
+        </div>
+
+        <div
+          class="w-[90px] h-[90px] hidden md:block lg:h-[120px] lg:w-[120px]"
         >
-          Intellig<span class="text-green">en</span>ce in <span
-            class="text-green">Food</span
-          > Systems
-        </h3>
-        <div class="w-[90px] h-[90px] hidden md:block">
-          <img src="/tomat1.webp" alt="tomatoes" class="w-[90px] h-[90px]" />
+          <img
+            src="/tomat1.webp"
+            alt="tomatoes"
+            class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px]"
+          />
         </div>
       </div>
 
@@ -44,15 +61,13 @@ import Value from "../components/Value.astro";
           Continent
         </article>
         <button
-          class="mt-[14px] bg-green text-white font-bold px-4 py-2 md:py-4 rounded-md cursor-pointer md:-translate-y-[3rem]"
+          class="mt-[14px] lg:mt-[18px] bg-green text-white font-bold px-4 py-2 md:py-4 rounded-md cursor-pointer md:-translate-y-[3rem]"
           >Book An Enterprise Demo</button
         >
       </div>
     </section>
 
-    <section
-      class="mt-[73px] md:mt-[40px] text-center justify-center items-center flex flex-col"
-    >
+    <section class="mt-[73px] md:mt-[40px] text-center flex flex-col">
       <div class="md:flex md:text-left">
         <div class="md:w-[400px]">
           <h3 class="font-black text-green text-2xl">

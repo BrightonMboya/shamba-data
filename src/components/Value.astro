@@ -3,24 +3,36 @@ import ImageCard from "./ImageCard.astro";
 ---
 
 <div class="flex items-center justify-center flex-col">
-  <div class="h-[214px] w-[350px] rounded-t-md">
-    <div class="h-[144px] bg-green rounded-t-md text-white text-center">
-      <h3 class="pt-[20px] font-bold text-lg">
+  <div class="h-[214px] w-[350px] lg:w-[900px] lg:h-[320px] rounded-t-md">
+    <div
+      class="h-[144px] lg:w-[900px] lg:h-[200px] bg-green rounded-t-md text-white text-center"
+    >
+      <h3 class="pt-[20px] font-bold text-lg lg:text-xl lg:pt-[30px]">
         Transforming Economic Value Chain
       </h3>
-      <article class="pt-[20px]">
-        With our accurate & up to date data, companies and businesses can
-        supplement their current supply chains, plan accordingly and make
-        data-informed decisions.
-      </article>
+      <div class="lg:flex lg:justify-center lg:items-center">
+        <article class="pt-[20px] lg:text-lg lg:max-w-2xl">
+          With our accurate & up to date data, companies and businesses can
+          supplement their current supply chains, plan accordingly and make
+          data-informed decisions.
+        </article>
+      </div>
     </div>
-    <div class="h-[70px] w-[350px]">
-      <img src="/tomat.webp" alt="" class="h-[70px] w-[350px]" />
+    <div
+      class="lg:flex lg:justify-center lg:items-center lg:-translate-y-[1rem]"
+    >
+      <div class="h-[70px] lg:h-[100px] lg:w-[380px] w-[350px]">
+        <img
+          src="/tomat.webp"
+          alt=""
+          class="h-[70px] w-[350px] lg:w-[380px] lg:h-[100px] lg:rounded-sm"
+        />
+      </div>
     </div>
   </div>
 
   <div class="mt-[45px]">
-    <h3 class="text-center text-green font-bold md:text-xl">
+    <h3 class="text-center text-green font-bold md:text-xl lg:text-[1.4rem]">
       We are Working with Customers to
     </h3>
     <div
@@ -36,13 +48,13 @@ import ImageCard from "./ImageCard.astro";
         color="gold"
         caption="Forecast Accordingly"
         imageUrl="/forecast.webp"
-        description="use our data to forecast the risk in supply chains and crop production"
+        description="use our data to forecast the risk in supply chains and crop production."
       />
       <ImageCard
         color="green"
         caption="Monitor Accordingly"
         imageUrl="/monitor.webp"
-        description="If you're working on the public sector, you can monitor food security on your region and understand how climate change is affecting food Production"
+        description="Use data to monitor food security in your region."
       />
     </div>
   </div>

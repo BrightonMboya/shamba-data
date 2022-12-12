@@ -2,3 +2,4 @@
 
 1. Populate Links and screens for the Footer
 2. Add A formLink to collect emails in the Footer
+3. Add the fuckin navbar
