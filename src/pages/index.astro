@@ -7,6 +7,7 @@ import Value from "../components/Value.astro";
   <main
     class="font-sans flex items-center justify-center flex-col container lg:max-w-[950px] 2xl:max-w-6xl"
   >
+    <!-- <Nav client:only /> -->
     <section class="pt-[100px] text-center">
       <div class="flex justify-between mx-[1rem]">
         <div class="w-[100px] h-[100px]">
@@ -96,7 +97,9 @@ import Value from "../components/Value.astro";
         </div>
       </div>
 
-      <div class="md:flex md:text-left md:space-x-[1rem] md:mt-[170px]">
+      <div
+        class="md:flex md:text-left md:space-x-[1rem] lg:space-x-[2rem] md:mt-[170px]"
+      >
         <div>
           <h3 class="font-black text-gold text-2xl mt-[50px]">
             Providing Market Information to Farmers in Zambia
