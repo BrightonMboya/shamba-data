@@ -26,7 +26,9 @@ const Nav = () => {
         <li>
           <a href="/"> Home</a>
         </li>
-        <li>What we do</li>
+        <li>
+          <a href="/#about">What we do</a>
+        </li>
         <li>
           <a href="/zambia">Market Information</a>
         </li>
@@ -40,7 +42,9 @@ const Nav = () => {
         <li>
           <a href="/"> Home</a>
         </li>
-        <li>What we do</li>
+        <li>
+          <a href="/#about">What we do</a>
+        </li>
         <li>
           <a href="/zambia">Market Information</a>
         </li>

@@ -1,0 +1,24 @@
+---
+import { Image } from "@astrojs/image/components";
+const { ringColor, position, name } = Astro.props;
+---
+
+<div class="flex items-center flex-col text-lg font-semi-bold">
+  <div class="mt-[2rem] text-center">
+    <div
+      class={`w-[200px] h-[200px] border-2 rounded-full absolute border-${ringColor} translate-x-[0.3rem] translate-y-[0.7rem]`}
+    >
+    </div>
+    <Image
+      src="/tony.jpeg"
+      alt=""
+      width={200}
+      height={200}
+      aspectRatio={16 / 9}
+      className="rounded-full shadow-md"
+      format="webp"
+    />
+  </div>
+  <h3 class="mt-5">{name}</h3>
+  <h3>{position}</h3>
+</div>
