@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RiMenu3Line } from "react-icons/ri";
+// import { RiMenu3Line } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
 
 const Nav = () => {
@@ -13,7 +13,8 @@ const Nav = () => {
         {showNav ? (
           <FaTimes size={30} color="#fff" />
         ) : (
-          <RiMenu3Line size={30} color="#46783E" />
+          ""
+          // <RiMenu3Line size={30} color="#46783E" />
         )}
       </div>
       <ul

@@ -6,17 +6,17 @@ import image from "@astrojs/image";
 // https://astro.build/config
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
   integrations: [
     tailwind(),
     react(),
-    image({ serviceEntryPoint: "@astrojs/image/sharp" }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
   ],
-  // vite: {
-  //   resolve: {
-  //     alias: {
-  //       "~": path.resolve(__dirname, "./src"),
-  //     },
-  //   },
-  // },
+  output: "server",
+  adapter: vercel(),
 });
