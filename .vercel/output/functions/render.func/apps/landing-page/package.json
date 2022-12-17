@@ -1,0 +1,28 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --host --experimental-integrations",
+    "start": "astro dev --experimental-integrations",
+    "build": "astro build --experimental-integrations",
+    "preview": "astro preview --experimental-integrations"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.12.1",
+    "@astrojs/react": "^1.2.2",
+    "@astrojs/tailwind": "^2.1.2",
+    "@astrojs/vercel": "^0.0.0-include-files-20221014142503",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "astro": "^1.6.10",
+    "astro-icon": "^0.8.0",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "sharp": "^0.31.2",
+    "svgo": "^3.0.2",
+    "tailwindcss": "^3.0.24"
+  }
+}
