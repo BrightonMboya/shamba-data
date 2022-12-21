@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Value from "../components/Value.astro";
+---
+
+<Layout title="Welcome to Shamba Data.">
+  <main
+    class="font-sans flex items-center justify-center flex-col container lg:max-w-[950px] 2xl:max-w-6xl"
+  >
+    <!-- <Nav client:only /> -->
+    <section class="pt-[100px] text-center">
+      <div class="flex justify-between mx-[1rem]">
+        <div class="w-[100px] h-[100px]">
+          <img src="/tomat1.webp" alt="tomatoes" class="w-[100px] h-[100px]" />
+        </div>
+        <div class="w-[100px] h-[100px] mt-[1.5rem]">
+          <img
+            src="/Tomatoes.webp"
+            alt="tomatoes"
+            class="w-[100px] h-[100px]"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-center items-end">
+        <div
+          class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px] hidden md:block"
+        >
+          <img
+            src="/chilli.webp"
+            alt="tomatoes"
+            class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px]"
+          />
+        </div>
+
+        <div class="lg:flex lg:justify-center lg:items-center">
+          <h3
+            class="font-bold text-[2.5rem] md:text-[3rem] lg:text-[4rem] text-center max-w-lg lg:max-w-none md:-translate-y-[2rem]"
+          >
+            Intellig<span class="text-green">en</span>ce in <span
+              class="text-green">Food</span
+            > Systems
+          </h3>
+        </div>
+
+        <div
+          class="w-[90px] h-[90px] hidden md:block lg:h-[120px] lg:w-[120px]"
+        >
+          <img
+            src="/tomat1.webp"
+            alt="tomatoes"
+            class="w-[90px] h-[90px] lg:h-[120px] lg:w-[120px]"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <article
+          class="mt-[25px] font-regular text-lg md:text-xl max-w-lg md:-translate-y-[3rem]"
+        >
+          We collect, aggregate, and process data that feeds the African
+          Continent
+        </article>
+        <button
+          class="mt-[14px] lg:mt-[18px] bg-green text-white font-bold px-4 py-2 md:py-4 rounded-md cursor-pointer md:-translate-y-[3rem]"
+          >Book An Enterprise Demo</button
+        >
+      </div>
+    </section>
+
+    <section
+      class="mt-[73px] md:mt-[40px] text-center flex flex-col"
+      id="about"
+    >
+      <div class="md:flex md:text-left">
+        <div class="md:w-[400px]">
+          <h3 class="font-black text-green text-2xl">
+            We are here to solve the world&apos;s fundamental challenge,
+          </h3>
+          <p class="mt-[10px] text-lg">
+            With the global population increasing, we need to find new solutions
+            that are scalable, and sustainable to the planet.
+          </p>
+          <p class="mt-[10px] text-lg">
+            To work on this, we start with providing agriculture data of the
+            African continent so that we can increase food production, monitor
+            food security and mitigate the effect of climate change in the
+            continent.
+          </p>
+        </div>
+
+        <div
+          class="h-[336px] w-[294px] md:w-[400px] md:h-[400px] mx-auto mt-[50px] md:mt-0"
+        >
+          <img
+            src="/hero.svg"
+            alt="hero"
+            class="h-[336px] w-[294px] md:w-[400px] md:h-[400px]"
+          />
+        </div>
+      </div>
+
+      <div
+        class="md:flex md:text-left md:space-x-[1rem] lg:space-x-[2rem] md:mt-[170px]"
+      >
+        <div>
+          <h3 class="font-black text-gold text-2xl mt-[50px]">
+            Providing Market Information to Farmers in Zambia
+          </h3>
+          <p class="mt-[20px] text-lg">
+            We aim to provide accurate and reliable data to our clients. We
+            provide over 100 Zambian farmers
+          </p>
+          <p class="mt-[15px] text-lg">
+            with market information so that they can know which market has the
+            best prices and return have more financial returns
+          </p>
+          <button
+            class="mt-[27px] bg-gold text-white font-bold px-4 py-2 rounded-md cursor-pointer"
+            >Learn More</button
+          >
+        </div>
+        <div class="flex items-center justify-center">
+          <div
+            class="sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[500px] w-[311px] h-[359px] mt-[2rem] z-10"
+          >
+            <img
+              src="/Lady.webp"
+              alt="Lady"
+              class="sm:w-[300px] sm:h-[400px] w-[311px] h-[359px] lg:h-[500px] lg:w-[400px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-[91px]">
+      <Value />
+    </section>
+  </main>
+</Layout>

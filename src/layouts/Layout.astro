@@ -69,7 +69,7 @@ import BasicScripts from "../components/BasicScripts.astro";
     <title>{title}</title>
   </head>
   <body class="flex flex-col items-center justify-center max-w-[200ch]">
-    <!-- <Nav client:load /> -->
+    <Nav client:idle />
     <slot />
     <Footer />
     <BasicScripts />

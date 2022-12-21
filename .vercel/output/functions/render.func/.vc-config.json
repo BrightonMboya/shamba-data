@@ -1,0 +1,1 @@
+{"runtime":"nodejs18.x","handler":"apps/landing-page/dist/entry.js","launcherType":"Nodejs"}
