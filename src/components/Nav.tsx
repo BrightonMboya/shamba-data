@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { RiMenu3Line } from "react-icons/ri";
-import { FaTimes } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
@@ -11,9 +11,11 @@ const Nav = () => {
         className="absolute right-5 top-5 cursor-pointer z-10 md:hidden"
       >
         {showNav ? (
-          <FaTimes size={30} color="#fff" />
+          <div className="text-4xl text-green font-bold">X</div>
         ) : (
-          ""
+          <div className="text-4xl text-green font-bold">^</div>
+          // <FaTimes size={30} color="#fff" />
+
           // <RiMenu3Line size={30} color="#46783E" />
         )}
       </div>
